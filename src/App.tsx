@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Privacy from "./Privacy";
 import Terms from "./Terms";
+import logo from "./assets/logo.jpg";
 
 export default function App() {
   return (
@@ -19,11 +20,15 @@ export default function App() {
             path="/"
             element={
               <div>
-                <p>
-                  CRM IMS is a customer relationship management system that allows
-                  users to manage clients and send emails securely using their own
-                  Google accounts.
-                </p>
+                
+                  <img src={logo} alt="CRM IMS Logo" width="150" />
+                  <p>
+                  CRM IMS is a customer relationship management system that allows users to manage clients, track sales, and send emails securely from their own Gmail accounts.
+                  </p>
+                  <p>
+                  This app requests access to your Gmail only to send emails you initiate; we do not read, store, or analyze your inbox.
+                  </p>
+                  
               </div>
             }
           />
